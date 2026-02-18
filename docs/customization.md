@@ -100,7 +100,7 @@ public class RobotoFontFamily: FontFamily {
     }
 }
 
-public class CustomFontProvider: MobilePaymentsFontProvider {
+public class BlockFontProvider: MobilePaymentsFontProvider {
     public var headerFont: FontFamily {
         RobotoFontFamily()
     }
@@ -110,10 +110,10 @@ public class CustomFontProvider: MobilePaymentsFontProvider {
     }
 }
 ```
-Once specified, you pass the new MobilePaymentsFontProvider as `fonts: CustomFontProvider()` to `MobilePaymentsStyleProvider`.
+Once specified, you pass the new MobilePaymentsFontProvider as `fonts: BlockFontProvider()` to `MobilePaymentsStyleProvider`.
 To customize only the font while using default values for other styling properties, pass only the color configuration
 ```
-let color = CustomFontProvider()
+let color = BlockFontProvider()
 let style = MobilePaymentsStyleProvider(fonts: font)
 MobilePayments.shared.setStyle(style)
 ```
@@ -155,7 +155,7 @@ public class BlockShapeProvider: MobilePaymentsShapeProvider {
 Once specified, you pass the new MobilePaymentsShapeProvider as `shapes: BlockShapeProvider()` to `MobilePaymentsStyleProvider`.
 To customize only the font while using default values for other styling properties, pass only the color configuration
 ```
-let color = CustomFontProvider()
+let color = BlockFontProvider()
 let style = MobilePaymentsStyleProvider(fonts: font)
 MobilePayments.shared.setStyle(style)
 ```
