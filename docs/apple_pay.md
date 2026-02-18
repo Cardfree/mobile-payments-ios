@@ -64,7 +64,7 @@ let isApplePayAvailable = try await PaymentManager.shared.canPayWithApplePay()
 ```
 
 ## Apple Pay Coordinator
-ApplePayCoordinator is an ObservableObject responsible for managing Apple Pay functionality end-to-end, for cases where you want the SDK to handle the entire flow. Simply set it up by initialize the object and listen to the results.
+ApplePayCoordinator is an ObservableObject responsible for managing Apple Pay functionality end-to-end, for cases where you want the SDK to handle the entire flow. Simply set it up by initializing the object and listening to the results.
 #### SwiftUI
 ```
 @StateObject private var applePayCoordinator = MobilePaymentsApplePayCoordinator()
