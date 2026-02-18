@@ -20063,21 +20063,21 @@
     {
       "filePath": "\/Users\/allan\/Documents\/mobile-payments-ios-sdk\/MobilePayments\/UI\/InternalComponents\/CAFInputTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 4618,
+      "offset": 4672,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/allan\/Documents\/mobile-payments-ios-sdk\/MobilePayments\/UI\/InternalComponents\/CAFInputTextField.swift",
       "kind": "IntegerLiteral",
-      "offset": 5073,
+      "offset": 5127,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/allan\/Documents\/mobile-payments-ios-sdk\/MobilePayments\/UI\/InternalComponents\/CAFInputTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 5117,
+      "offset": 5171,
       "length": 5,
       "value": "false"
     },
@@ -20329,315 +20329,105 @@
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1140,
-      "length": 22,
-      "value": "\"Img-Diners-Club-Card\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1296,
-      "length": 15,
-      "value": "\"Img_amex_card\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1427,
+      "offset": 1109,
       "length": 5,
       "value": "\"JCB\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1562,
+      "offset": 1244,
       "length": 12,
       "value": "\"Mastercard\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1692,
+      "offset": 1374,
       "length": 6,
       "value": "\"Visa\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1827,
-      "length": 12,
-      "value": "\"arrow_back\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1970,
-      "length": 13,
-      "value": "\"back_circle\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2103,
-      "length": 7,
-      "value": "\"check\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2251,
-      "length": 18,
-      "value": "\"check_unselected\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2402,
-      "length": 14,
-      "value": "\"close_drawer\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2547,
-      "length": 13,
-      "value": "\"cvv-express\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2685,
-      "length": 10,
-      "value": "\"cvv-visa\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2824,
-      "length": 12,
-      "value": "\"down_arrow\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2970,
-      "length": 15,
-      "value": "\"icn_apple_pay\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 3131,
-      "length": 21,
-      "value": "\"icn_arrow_collapsed\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 3296,
-      "length": 20,
-      "value": "\"icn_arrow_expanded\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 3445,
-      "length": 12,
-      "value": "\"icn_delete\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 3597,
-      "length": 18,
-      "value": "\"icn_double_arrow\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 3740,
-      "length": 10,
-      "value": "\"icn_edit\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 3883,
+      "offset": 1513,
       "length": 14,
       "value": "\"icn_giftcard\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4033,
-      "length": 16,
-      "value": "\"icn_google_pay\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 4178,
-      "length": 12,
-      "value": "\"icn_logout\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 4338,
-      "length": 22,
-      "value": "\"icn_magnifying_glass\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 4497,
-      "length": 16,
-      "value": "\"icn_mastercard\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 4653,
+      "offset": 1667,
       "length": 18,
       "value": "\"icn_payment_card\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4815,
+      "offset": 1829,
       "length": 20,
       "value": "\"icn_radial_checked\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4983,
+      "offset": 1997,
       "length": 22,
       "value": "\"icn_radial_unchecked\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5136,
-      "length": 13,
-      "value": "\"icn_refresh\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 5278,
-      "length": 12,
-      "value": "\"icn_reward\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 5421,
-      "length": 13,
-      "value": "\"icn_signout\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 5578,
+      "offset": 2163,
       "length": 20,
       "value": "\"icn_square_checked\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5746,
+      "offset": 2331,
       "length": 22,
       "value": "\"icn_square_unchecked\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5893,
-      "length": 10,
-      "value": "\"icn_visa\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 6045,
-      "length": 19,
-      "value": "\"img_discover_card\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 6196,
+      "offset": 2485,
       "length": 14,
       "value": "\"img_jcb_card\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6339,
-      "length": 12,
-      "value": "\"left_arrow\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 6475,
+      "offset": 2623,
       "length": 9,
       "value": "\"maestro\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6604,
-      "length": 7,
-      "value": "\"minus\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 6729,
+      "offset": 2750,
       "length": 6,
       "value": "\"plus\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6866,
-      "length": 13,
-      "value": "\"right_arrow\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 7024,
-      "length": 20,
-      "value": "\"selected_checkmark\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 7164,
+      "offset": 2876,
       "length": 7,
       "value": "\"trash\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7304,
-      "length": 14,
-      "value": "\"trash_circle\""
-    },
-    {
-      "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 7445,
+      "offset": 3010,
       "length": 11,
       "value": "\"union-pay\""
     },
     {
       "filePath": "\/Users\/allan\/Library\/Developer\/Xcode\/DerivedData\/mobile-payments-ios-fadnpmlqrmcipzdltgajasdbissa\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FiservMobilePayments\/IntermediateBuildFilesPath\/mobile-payments-ios.build\/Release-iphonesimulator\/FiservMobilePayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7576,
+      "offset": 3141,
       "length": 7,
       "value": "\"xmark\""
     }

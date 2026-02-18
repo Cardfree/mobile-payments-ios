@@ -84,7 +84,7 @@ struct ContentView: View {
                     MobilePayments.shared.setStyle(style)
                     self.colorProvider = style.colors
                     setCustomerId()
-                    alertTitle = "Style #1 (Custom) Applied"
+                    alertTitle = "Style #1 (Yellow Block) Applied"
                     alertMessage = ""
                     showAlert = true
                 }, label: {
@@ -100,7 +100,7 @@ struct ContentView: View {
                     MobilePayments.shared.setStyle(style)
                     self.colorProvider = style.colors
                     setCustomerId()
-                    alertTitle = "Style #2 (Dark) Applied"
+                    alertTitle = "Style #2 (Dark Rounded) Applied"
                     alertMessage = ""
                     showAlert = true
                 }, label: {
@@ -154,9 +154,9 @@ struct ContentView: View {
             // This is a self-contained payment view that fully handle the entire payment flow
             MobilePaymentsPurchaseView(amount: amount,
                                        customerId: customerId,
-                                       applePayMerchantId: "merchant.com.cardfree.commercehub.sandbox",
+                                       applePayMerchantId: applePayMerchantId,
                                        applePayButtonLabel: .checkout,
-                                       applePayButtonStyle: .black,
+                                       applePayButtonStyle: colorProvider.background == DarkColorProvider().background ? .white : .black,
                                        delegate: self)
         }
         .fullScreenCover(isPresented: $showComponents) {

@@ -93,7 +93,7 @@ struct ComponentsView: View {
                                 self.paymentState.selectedPayment = creditCard
                             }
                             
-                            Text("UPS provides information you submit through this site to a vendor for security purposes. Please see the Privacy Policy for more information.")
+                            Text("Acme provides information you submit through this site to a vendor for security purposes. Please see the Privacy Policy for more information.")
                                 .font(.system(size: 14))
                                 .foregroundStyle(Color(colorProvider.mediumText))
                                 .frame(maxWidth: .infinity, alignment: .leading)

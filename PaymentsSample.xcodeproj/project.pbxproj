@@ -6,41 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		9D656FF42F4516E800E6C21F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9D656FF32F4516E800E6C21F /* README.md */; };
-		9D65724A2F4525D400E6C21F /* sheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6572252F4525D400E6C21F /* sheet.png */; };
-		9D6572742F4525D400E6C21F /* ui_components.md in Resources */ = {isa = PBXBuildFile; fileRef = 9D6572232F4525D400E6C21F /* ui_components.md */; };
-		9D6572842F4525D400E6C21F /* sheet_custom_font.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6572272F4525D400E6C21F /* sheet_custom_font.png */; };
-		9D6572852F4525D400E6C21F /* sheets.md in Resources */ = {isa = PBXBuildFile; fileRef = 9D6572222F4525D400E6C21F /* sheets.md */; };
-		9D6572902F4525D400E6C21F /* uicomponents.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D65722D2F4525D400E6C21F /* uicomponents.png */; };
-		9D6572922F4525D400E6C21F /* customization.md in Resources */ = {isa = PBXBuildFile; fileRef = 9D65721E2F4525D400E6C21F /* customization.md */; };
-		9D65729B2F4525D400E6C21F /* sheet_default_font.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D65722A2F4525D400E6C21F /* sheet_default_font.png */; };
-		9D6572C22F4525D400E6C21F /* direct.md in Resources */ = {isa = PBXBuildFile; fileRef = 9D65721F2F4525D400E6C21F /* direct.md */; };
-		9D6573302F4525D400E6C21F /* singlecardmode.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D65722C2F4525D400E6C21F /* singlecardmode.png */; };
-		9D6573AA2F4525D400E6C21F /* sheet_default_color.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6572292F4525D400E6C21F /* sheet_default_color.png */; };
-		9D6573C12F4525D400E6C21F /* sheet_custom_shapes.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6572282F4525D400E6C21F /* sheet_custom_shapes.png */; };
-		9D6573E72F4525D400E6C21F /* sheet_custom_color.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6572262F4525D400E6C21F /* sheet_custom_color.png */; };
-		9D6573F82F4525D400E6C21F /* sheet_default_shapes.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D65722B2F4525D400E6C21F /* sheet_default_shapes.png */; };
-		9D6574032F458B7200E6C21F /* apple_pay.md in Resources */ = {isa = PBXBuildFile; fileRef = 9D6574022F458B7200E6C21F /* apple_pay.md */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		9D656FCA2F45118E00E6C21F /* PaymentsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D656FF32F4516E800E6C21F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9D65721E2F4525D400E6C21F /* customization.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = customization.md; sourceTree = "<group>"; };
-		9D65721F2F4525D400E6C21F /* direct.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = direct.md; sourceTree = "<group>"; };
-		9D6572222F4525D400E6C21F /* sheets.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = sheets.md; sourceTree = "<group>"; };
-		9D6572232F4525D400E6C21F /* ui_components.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ui_components.md; sourceTree = "<group>"; };
-		9D6572252F4525D400E6C21F /* sheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheet.png; sourceTree = "<group>"; };
-		9D6572262F4525D400E6C21F /* sheet_custom_color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheet_custom_color.png; sourceTree = "<group>"; };
-		9D6572272F4525D400E6C21F /* sheet_custom_font.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheet_custom_font.png; sourceTree = "<group>"; };
-		9D6572282F4525D400E6C21F /* sheet_custom_shapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheet_custom_shapes.png; sourceTree = "<group>"; };
-		9D6572292F4525D400E6C21F /* sheet_default_color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheet_default_color.png; sourceTree = "<group>"; };
-		9D65722A2F4525D400E6C21F /* sheet_default_font.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheet_default_font.png; sourceTree = "<group>"; };
-		9D65722B2F4525D400E6C21F /* sheet_default_shapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheet_default_shapes.png; sourceTree = "<group>"; };
-		9D65722C2F4525D400E6C21F /* singlecardmode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singlecardmode.png; sourceTree = "<group>"; };
-		9D65722D2F4525D400E6C21F /* uicomponents.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uicomponents.png; sourceTree = "<group>"; };
-		9D6574022F458B7200E6C21F /* apple_pay.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = apple_pay.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -78,9 +45,6 @@
 		9D656FC12F45118E00E6C21F = {
 			isa = PBXGroup;
 			children = (
-				9D6572242F4525D400E6C21F /* docs */,
-				9D65722E2F4525D400E6C21F /* images */,
-				9D656FF32F4516E800E6C21F /* README.md */,
 				9D656FCC2F45118E00E6C21F /* PaymentsSample */,
 				9D656FCB2F45118E00E6C21F /* Products */,
 			);
@@ -92,34 +56,6 @@
 				9D656FCA2F45118E00E6C21F /* PaymentsSample.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9D6572242F4525D400E6C21F /* docs */ = {
-			isa = PBXGroup;
-			children = (
-				9D6574022F458B7200E6C21F /* apple_pay.md */,
-				9D65721E2F4525D400E6C21F /* customization.md */,
-				9D65721F2F4525D400E6C21F /* direct.md */,
-				9D6572222F4525D400E6C21F /* sheets.md */,
-				9D6572232F4525D400E6C21F /* ui_components.md */,
-			);
-			path = docs;
-			sourceTree = "<group>";
-		};
-		9D65722E2F4525D400E6C21F /* images */ = {
-			isa = PBXGroup;
-			children = (
-				9D6572252F4525D400E6C21F /* sheet.png */,
-				9D6572262F4525D400E6C21F /* sheet_custom_color.png */,
-				9D6572272F4525D400E6C21F /* sheet_custom_font.png */,
-				9D6572282F4525D400E6C21F /* sheet_custom_shapes.png */,
-				9D6572292F4525D400E6C21F /* sheet_default_color.png */,
-				9D65722A2F4525D400E6C21F /* sheet_default_font.png */,
-				9D65722B2F4525D400E6C21F /* sheet_default_shapes.png */,
-				9D65722C2F4525D400E6C21F /* singlecardmode.png */,
-				9D65722D2F4525D400E6C21F /* uicomponents.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,21 +122,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D656FF42F4516E800E6C21F /* README.md in Resources */,
-				9D65724A2F4525D400E6C21F /* sheet.png in Resources */,
-				9D6572742F4525D400E6C21F /* ui_components.md in Resources */,
-				9D6572842F4525D400E6C21F /* sheet_custom_font.png in Resources */,
-				9D6572852F4525D400E6C21F /* sheets.md in Resources */,
-				9D6572902F4525D400E6C21F /* uicomponents.png in Resources */,
-				9D6574032F458B7200E6C21F /* apple_pay.md in Resources */,
-				9D6572922F4525D400E6C21F /* customization.md in Resources */,
-				9D65729B2F4525D400E6C21F /* sheet_default_font.png in Resources */,
-				9D6572C22F4525D400E6C21F /* direct.md in Resources */,
-				9D6573302F4525D400E6C21F /* singlecardmode.png in Resources */,
-				9D6573AA2F4525D400E6C21F /* sheet_default_color.png in Resources */,
-				9D6573C12F4525D400E6C21F /* sheet_custom_shapes.png in Resources */,
-				9D6573E72F4525D400E6C21F /* sheet_custom_color.png in Resources */,
-				9D6573F82F4525D400E6C21F /* sheet_default_shapes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

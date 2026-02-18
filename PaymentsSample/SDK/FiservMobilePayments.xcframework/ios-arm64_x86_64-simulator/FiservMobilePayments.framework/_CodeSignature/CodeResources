@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		fYJaPA7iboJvoF8hAwwRSUBiw6U=
+		1Ed0xkEIqlCDJy4A0ffpk1HZWq8=
 		</data>
 		<key>ColorMapping.plist</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/FiservMobilePayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		LYNdv5dDyygrGgFf+oAIkYFXEQ4=
+		agIIY7kJJcWwckTj4GijbuHvkCM=
 		</data>
 		<key>Modules/FiservMobilePayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/FiservMobilePayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8JzhdB7b5To0i6hOPECDHpHxm74=
+		q5M5Fqi821h8nqMpcWfsCU+xgmE=
 		</data>
 		<key>Modules/FiservMobilePayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		LYNdv5dDyygrGgFf+oAIkYFXEQ4=
+		agIIY7kJJcWwckTj4GijbuHvkCM=
 		</data>
 		<key>Modules/FiservMobilePayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/FiservMobilePayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CNkjXwUf2jlEcIz3Lezm+UZWuYo=
+		yG+4veH6AkIylaIX6KQ1+N8YuhM=
 		</data>
 		<key>Montserrat-Bold.ttf</key>
 		<data>
@@ -96,7 +96,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yDvN6ZTnnZPlHGAza+DxMLPJOdnGbgUpyXNpHn4nh1U=
+			WH1g7g7pdvAodHL73Zi9pvMTBKWHMlksXrnaFOC1jTc=
 			</data>
 		</dict>
 		<key>ColorMapping.plist</key>
@@ -110,7 +110,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NsGVovBIwsIHZZHO+t5JgckUUDD591DzYUETWCGVNAo=
+			a77sueKzn6TaJefnDZq/oNzA2w2mNWQ1X5DKXM/6a84=
 			</data>
 		</dict>
 		<key>Modules/FiservMobilePayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -138,14 +138,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lL8JAdteKnOC1TGCRTCl+hQIUuNF8q0zWvO0Ntl9yg0=
+			wdu6ywtVlQB+WyKcJGVhDphehMwaYICqDfQ0m6jTHt4=
 			</data>
 		</dict>
 		<key>Modules/FiservMobilePayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NsGVovBIwsIHZZHO+t5JgckUUDD591DzYUETWCGVNAo=
+			a77sueKzn6TaJefnDZq/oNzA2w2mNWQ1X5DKXM/6a84=
 			</data>
 		</dict>
 		<key>Modules/FiservMobilePayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3WpYyftKtZQ+5GGCAJlUiFJZMrIZn2w9twamWV+vlSI=
+			r2fdL1vf/F5iAH3af19yXZfXxGZVdFD+F1rg+guzbDg=
 			</data>
 		</dict>
 		<key>Montserrat-Bold.ttf</key>
