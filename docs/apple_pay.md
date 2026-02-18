@@ -134,7 +134,6 @@ await applePayCoordinator.performTransaction(amount: 13.37,
     * The type of Payment you are seeking to collect.  The options are `TransactionType.SALE` or `TransactionType.AUTH`.  Simply put, `SALE` is used to collect funds immediately, while `AUTH` will reserve funds on the payment method, but will not collect them until a `CAPTURE` transaction is run in the future. MobilePayments will default to SALE if this parameter is not set.
   * **(OPTIONAL)** Client Transaction Id
     * An identifier for the transaction, used for tracking purposes. Defaults to a randomly generated UUID if not supplied.
-  * method
   * **(OPTIONAL)** Merchant Reference
     * A reference value for the transaction, usually the ticket or order number
 
