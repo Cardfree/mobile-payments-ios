@@ -206,6 +206,7 @@ The Mobile Payments iOS SDK utilizes the standard `Localizable.strings`, drawing
 "mp_purchasePaymentDivider" = "OR PAY WITH CARD";
 ```
 To customize, simply add any of these string keys in your `Localizable.strings` file and change the value as desired.
+
 For example, if you wish to change the purchase button's label, simply add
 ```
 mp_purchaseButtonLabel = "<Your customized button label>";
