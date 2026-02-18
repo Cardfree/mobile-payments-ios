@@ -79,7 +79,7 @@ extension YourViewController: MobilePaymentsPurchaseDelegate {
   * **(OPTIONAL)** Apple Pay Button Label
     * Requires SwiftUI and PassKit to be imported. Allows the customization of the label for the Apple Pay button. Refer to https://developer.apple.com/documentation/passkit/paywithapplepaybuttonlabel
   * **(OPTIONAL)** Apple Pay Button Style
-    * Requires SwiftUI and PassKit to be imported. Allows the customization of the color for the Apple Pay button. Refer to https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayButtonStyle
+    * Requires SwiftUI and PassKit to be imported. Allows the customization of the color for the Apple Pay button. Refer to https://developer.apple.com/documentation/passkit/paywithapplepaybuttonstyle
   * **(OPTIONAL)** Transaction Type
     * The type of Payment you are seeking to collect.  The options are `TransactionType.SALE` or `TransactionType.AUTH`.  Simply put, `SALE` is used to collect funds immediately, while `AUTH` will reserve funds on the payment method, but will not collect them until a `CAPTURE` transaction is run in the future. MobilePayments will default to SALE if this parameter is not set.
   * **(OPTIONAL)** Client Transaction Id
