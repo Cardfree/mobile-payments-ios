@@ -27,7 +27,7 @@ The Mobile Payments SDK is available through either [CocoaPods](https://www.coco
 ## Running the Sample App
 A sample app is included in this repository to demonstrate SDK integration.
 
-Before running the project, open `Constants.swift` and replace the placeholder values with your own configuration values.
+Before running the project, open `Configurations.swift` and replace the placeholder values with your own configuration values.
 
 # Initialization
 Initialization can be performed at any time, but must occur before using any SDK APIs.  Here, you will provide:

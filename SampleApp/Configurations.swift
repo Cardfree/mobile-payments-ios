@@ -1,5 +1,5 @@
 //
-//  Constants.swift
+//  Configurations.swift
 //  PaymentsSample
 //
 
