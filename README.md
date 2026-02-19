@@ -37,6 +37,10 @@ Initialization can be performed at any time, but must occur before using any SDK
 
 The invocation will look like this:
 ```
+import FiservMobilePayments
+
+// ... inside your AppDelegate or App struct ...
+
 MobilePayments.shared.initialize(
   environment: .sandbox,
   clientToken: "<clientToken>",

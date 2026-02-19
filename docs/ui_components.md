@@ -32,6 +32,8 @@ The Credit Card List is provided through the `CreditCardListView` View for Swift
 
 #### SwiftUI
 ```
+import FiservMobilePayments
+
 struct YourView: View {
     @ObservedObject private var state = PaymentState()
     
@@ -52,6 +54,8 @@ struct YourView: View {
 
 #### UIKit
 ```
+import FiservMobilePayments
+
 class YourViewController: UIViewController {
     private var state = PaymentState()
     
@@ -121,6 +125,8 @@ Credit Card Details is handled through two UI components.  The `CreditCardDetail
 
 #### SwiftUI
 ```
+import FiservMobilePayments
+
 struct YourSwiftUIView: View {
     @State showAddCreditCard: Bool = false
     
@@ -187,6 +193,8 @@ To embed the `CreditCardDetailsView`, you must simply add the Composable where y
 
 #### SwiftUI
 ```
+import FiservMobilePayments
+
 struct YourView: View {    
     var body: some View {
         ZStack {
@@ -206,6 +214,8 @@ struct YourView: View {
 ```
 #### UIKit
 ```
+import FiservMobilePayments
+
 class YourViewController: UIViewController {
     override func viewDidLoad {
         super.viewDidLoad()
@@ -257,7 +267,9 @@ Purchase in MobilePayments has only one UI element, the `PurchaseButton`.  This 
 To integrate the `PurchaseButton`, add it to your SwiftUI view hierarchy or attach it to your view controller’s view. 
 
 #### SwiftUI
-```               
+```
+import FiservMobilePayments
+          
 struct YourView: View {
     @ObservedObject private var state = PaymentState()
     
@@ -285,6 +297,8 @@ struct YourView: View {
 
 #### UIKit:
 ```
+import FiservMobilePayments
+
 class YourViewController: UIViewController {
     private var state = PaymentState()
             

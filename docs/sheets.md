@@ -4,6 +4,8 @@ Sheets integration is simply presenting the SwiftUI.View `MobilePaymentsPurchase
 ## Launching the UI
 ### SwiftUI
 ```
+import FiservMobilePayments
+
 struct YourSwiftUIView: View {
     @State showPurchaseView: Bool = false
     
