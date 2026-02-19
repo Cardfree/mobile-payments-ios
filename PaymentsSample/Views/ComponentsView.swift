@@ -16,8 +16,6 @@ struct ComponentsView: View {
     @SwiftUI.Environment(\.dismiss) private var dismiss
 
     @ObservedObject var paymentState: PaymentState = PaymentState()
-    @State private var amount: String = ""
-    @FocusState private var amountFocused: Bool
     
     @State private var isLoading: Bool = false
     
@@ -25,9 +23,16 @@ struct ComponentsView: View {
     @State private var alertMessage: String = ""
     @State private var showAlert: Bool = false
     
-    
     @StateObject private var applePayCoordinator = MobilePaymentsApplePayCoordinator()
     @State private var isApplePayAvailable: Bool = true
+    
+    let itemOnePrice: Decimal = Decimal(Int.random(in: 1...7_000)) / 100
+    let itemTwoPrice: Decimal = Decimal(Int.random(in: 1...7_000)) / 100
+    let taxesAndFees: Decimal = 5.95
+    
+    var total: Decimal {
+        itemOnePrice + itemTwoPrice + taxesAndFees
+    }
     
     @Binding var colorProvider: MobilePaymentsColorProvider
     
@@ -35,37 +40,86 @@ struct ComponentsView: View {
         NavigationStack {
             ZStack {
                 VStack {
-                    TextField("Amount", text: $amount, prompt: Text("Amount").foregroundStyle(Color(colorProvider.darkText)))
-                        .tint(Color(colorProvider.darkText))
-                        .foregroundStyle(Color(colorProvider.darkText))
-                        .keyboardType(.decimalPad)
-                        .frame(maxWidth: .infinity, minHeight: 50)
-                        .padding(.horizontal)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(amountFocused ? Color(colorProvider.primary) : Color(colorProvider.mediumText), lineWidth: 1)
-                        }
-                        .focused($amountFocused)
-                        .padding()
-                        .onTapGesture {
-                            amountFocused = true
-                        }
-                    
                     ScrollView {
                         VStack {
-                            // Shows the entered total to be charged
+                            // Presents the SDK's'credit card list component.
+                            // Disables scrolling because this is embeded inside a ScrollView
+                            // Enabled requireCvv to forcefully collect CVV. Can be set to false if desired
+                            CreditCardListView(state: paymentState,
+                                               scrollingEnabled: false,
+                                               requireCvv: true) { creditCard in
+                                self.paymentState.selectedPayment = creditCard
+                            }
+                            .padding(.top)
+                            
+                            Text("Your Cart")
+                                .font(.system(size: 22, weight: .bold))
+                                .foregroundStyle(Color(colorProvider.darkText))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .multilineTextAlignment(.leading)
+                                .padding([.horizontal, .top])
+                            
                             HStack {
-                                Text("Total")
-                                    .font(.system(size: 18, weight: .semibold))
+                                Text("Gemini Chart")
+                                    .font(.system(size: 14, weight: .bold))
                                     .foregroundStyle(Color(colorProvider.darkText))
                                 
                                 Spacer()
                                 
-                                Text(parseAmount(), format: .currency(code: "USD"))
+                                Text(itemOnePrice.formatted(.currency(code: "USD")))
+                                    .font(.system(size: 16, weight: .regular))
+                                    .foregroundStyle(Color(colorProvider.darkText))
+                            }
+                            .padding([.horizontal, .top])
+                            
+                            Capsule()
+                                .fill(Color(colorProvider.mediumText))
+                                .frame(height: 0.5)
+                                .padding(.horizontal)
+                            
+                            HStack {
+                                Text("Quickstart Kit")
+                                    .font(.system(size: 14, weight: .bold))
+                                    .foregroundStyle(Color(colorProvider.darkText))
+                                
+                                Spacer()
+                                
+                                Text(itemTwoPrice.formatted(.currency(code: "USD")))
+                                    .font(.system(size: 16, weight: .regular))
+                                    .foregroundStyle(Color(colorProvider.darkText))
+                            }
+                            .padding(.horizontal)
+                            
+                            Capsule()
+                                .fill(Color(colorProvider.darkText))
+                                .frame(height: 1)
+                                .padding(.horizontal)
+                            
+                            HStack {
+                                Text("Taxes & Fees")
+                                    .font(.system(size: 18, weight: .bold))
+                                    .foregroundStyle(Color(colorProvider.darkText))
+                                
+                                Spacer()
+                                
+                                Text(taxesAndFees.formatted(.currency(code: "USD")))
                                     .font(.system(size: 20, weight: .regular))
                                     .foregroundStyle(Color(colorProvider.darkText))
                             }
                             .padding(.horizontal)
+                            
+                            HStack {
+                                Text("Total")
+                                    .font(.system(size: 22, weight: .bold))
+                                    .foregroundStyle(Color(colorProvider.darkText))
+                                
+                                Spacer()
+                                
+                                Text(total.formatted(.currency(code: "USD")))
+                                    .font(.system(size: 24, weight: .bold))
+                                    .foregroundStyle(Color(colorProvider.darkText))
+                            }
+                            .padding()
                             
                             // If apple pay is available, present an Apple Pay button for the user to checkout with
                             if isApplePayAvailable {
@@ -74,23 +128,14 @@ struct ComponentsView: View {
                                     paymentState.transactionInProgress = true
                                     Task {
                                         // Use the SDK's MobilePaymentsApplePayCoordinator to start the Apple Pay flow
-                                        await applePayCoordinator.performTransaction(amount: parseAmount(),
+                                        await applePayCoordinator.performTransaction(amount: total,
                                                                                      applePayMerchantId: applePayMerchantId)
                                     }
                                 })
                                 .padding(.horizontal)
                                 .payWithApplePayButtonStyle(colorProvider.background == DarkColorProvider().background ? .white : .black)
-                                .disabled(paymentState.transactionInProgress || parseAmount() == 0)
+                                .disabled(paymentState.transactionInProgress)
                                 .frame(maxWidth: .infinity, minHeight: 48, maxHeight: 48)
-                            }
-                            
-                            // Presents the SDK's'credit card list component.
-                            // Disables scrolling because this is embeded inside a ScrollView
-                            // Enabled requireCvv to forcefully collect CVV. Can be set to false if desired
-                            CreditCardListView(state: paymentState,
-                                               scrollingEnabled: false,
-                                               requireCvv: true) { creditCard in
-                                self.paymentState.selectedPayment = creditCard
                             }
                             
                             Text("Acme provides information you submit through this site to a vendor for security purposes. Please see the Privacy Policy for more information.")
@@ -109,6 +154,7 @@ struct ComponentsView: View {
                                 .padding(.horizontal)
                         }
                     }
+                    .scrollDismissesKeyboard(.immediately)
                     
                     // Presents the SDK's purchase button component.
                     // Process the transaction as a sales transaction
@@ -142,6 +188,45 @@ struct ComponentsView: View {
                         .tint(.white)
                 }
             }
+            .onChange(of: applePayCoordinator.paymentResults) { _, result in
+                // Listen to the resulting Apple Pay sales transaction if user paid with Apple Pay
+                guard let result = result else { return }
+                paymentState.transactionInProgress = false
+                switch result {
+                case .success(let transaction):
+                    alertTitle = "Success!"
+                    alertMessage = "Apple Pay transaction successful. Transaction ID: \(transaction.transactionId).\nPaid \(transaction.amount) \(transaction.currencyCode?.uppercased() ?? "USD")"
+                    showAlert = true
+                case .failure(let error):
+                    alertTitle = "Error!"
+                    alertMessage = error.error.localizedDescription
+                    showAlert = true
+                default:
+                    break
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(Color(colorProvider.background), for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "xmark")
+                            .foregroundColor(Color(colorProvider.darkText))
+                            .imageScale(.large)
+                            .padding()
+                    }
+                }
+                .hideSharedBackground()
+                
+                ToolbarItem(placement: .principal) {
+                    Text("UI Components")
+                        .font(.system(size: 24, weight: .bold))
+                        .foregroundStyle(Color(colorProvider.darkText))
+                }
+            }
             .background(Color(colorProvider.background))
         }
         .task {
@@ -152,20 +237,12 @@ struct ComponentsView: View {
                 alertMessage = error.localizedDescription
                 showAlert = true
             }
+            paymentState.amount = total
         }
         .alert(alertTitle, isPresented: $showAlert) {
             Button("OK", role: .cancel) { }
         } message: {
             Text(alertMessage)
-        }
-    }
-    
-    private func parseAmount() -> Decimal {
-        let amount = (Decimal(string: amount) ?? 0)
-        if amount < 0 {
-            return 0
-        } else {
-            return amount.rounded(scale: 2)
         }
     }
 }
