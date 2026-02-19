@@ -220,9 +220,6 @@ class YourViewController: UIViewController {
     override func viewDidLoad {
         super.viewDidLoad()
         
-        // If you want to listen to updates via PaymentState
-        setupBindings()
-        
         // Add the credit card view
         let creditCardView = UICreditCardDetailsView(customerId: customerId,
                                                      canSaveCard: canSaveCard,
@@ -304,9 +301,6 @@ class YourViewController: UIViewController {
             
     override func viewDidLoad {
         super.viewDidLoad()
-        
-        // If you want to listen to updates via PaymentState
-        setupBindings()
         
         // Add the credit card view
         let creditCardView = UIPurchaseButton(state: state,

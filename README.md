@@ -44,7 +44,7 @@ import FiservMobilePayments
 MobilePayments.shared.initialize(
   environment: .sandbox,
   clientToken: "<clientToken>",
-  businessLocationId: "<businessLocationId>",
+  businessLocationId: "<businessLocationId>"
 )
 ```
 
