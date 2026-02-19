@@ -4,7 +4,8 @@ Pod::Spec.new do |spec|
   spec.summary       = 'Fiserv\'s Mobile Payments SDK'
   spec.description   = 'Take and manage payments on iOS with Fiserv'
   spec.homepage      = 'https://github.com/fiserv/mobile-payments-ios'
-  spec.license       = { :type => 'MIT', :text => <<--LICENSE
+  spec.license       = { :type => 'MIT',
+                         :text => <<-LICENSE
                             MIT License
 
 Copyright (c) 2026 Fiserv
@@ -26,6 +27,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+                        LICENSE
                         }
   spec.authors       = { 'Allan' => 'allan.cheng@fiserv.com' }
   spec.platform      = :ios, '16.4'
