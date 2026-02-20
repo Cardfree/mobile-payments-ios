@@ -6,14 +6,16 @@
 //
 
 import UIKit
+import FiservMobilePayments
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Initialize the SDK
+        MobilePayments.shared.initialize(environment: .sandbox,
+                                         clientToken: token,
+                                         businessLocationId: locationId)
         return true
     }
 
