@@ -17,6 +17,8 @@ class RootViewController: UIViewController {
         let textField = UITextField()
         textField.placeholder = "Customer ID"
         textField.borderStyle = .roundedRect
+        textField.backgroundColor = .white
+        textField.textColor = .black
         return textField
     }()
     
@@ -231,6 +233,8 @@ class RootViewController: UIViewController {
         let shape = CustomShapeProvider()
         let style = MobilePaymentsStyleProvider(colors: color, fonts: font, shapes: shape)
         MobilePayments.shared.setStyle(style)
+        navigationController?.navigationBar.barTintColor = color.background
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: color.darkText]
         self.colorProvider = style.colors
         showPopup(title: "Style #1 (Yellow Block) Applied", message: nil, from: self)
     }
@@ -241,6 +245,8 @@ class RootViewController: UIViewController {
         let fonts = DarkFontProvider()
         let style = MobilePaymentsStyleProvider(colors: color, fonts: fonts)
         MobilePayments.shared.setStyle(style)
+        navigationController?.navigationBar.barTintColor = color.background
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: color.darkText]
         self.colorProvider = style.colors
         showPopup(title: "Style #2 (Dark Rounded) Applied", message: nil, from: self)
     }
@@ -249,6 +255,8 @@ class RootViewController: UIViewController {
         setCustomerId()
         let style = MobilePaymentsStyleProvider()
         MobilePayments.shared.setStyle(style)
+        navigationController?.navigationBar.barTintColor = style.colors.background
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: style.colors.darkText]
         self.colorProvider = style.colors
         showPopup(title: "Style #3 (Default) Applied", message: nil, from: self)
     }

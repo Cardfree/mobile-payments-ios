@@ -19,6 +19,8 @@ class GuestCheckoutViewController: UIViewController {
         let textField = UITextField()
         textField.placeholder = "Amount"
         textField.borderStyle = .roundedRect
+        textField.textColor = colorProvider.darkText
+        textField.backgroundColor = colorProvider.background
         return textField
     }()
     
