@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "FiservMobilePayments",
     platforms: [
-        .iOS(.v16.4)
+        .iOS(.v16_4)
     ],
     products: [
         .library(
