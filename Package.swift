@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "FiservMobilePayments",
-            url: "https://github.com/Fiserv/mobile-payments-ios/releases/download/1.0.2/FiservMobilePayments.xcframework.zip",
-            checksum: "627f2685cb434d8f0e37739c4bc7a2a86537e3979c3a84981648756c8844c8e7"
+            url: "https://github.com/Fiserv/mobile-payments-ios/releases/download/1.0.3/FiservMobilePayments.xcframework.zip",
+            checksum: "b24d08cb813a35039b4f24e1fbd127eaa0c945b54beccd5dc91d1ddbf6d99f45"
         )
     ]
 )
