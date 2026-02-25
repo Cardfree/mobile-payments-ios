@@ -115,6 +115,12 @@ extension YourViewController: CreditCardListDelegate {
     * Flag to require CVV value when reusing previously saved `CreditCards`.  Defaults to nil
   * **(OPTIONAL)** Can Add Cards
     * Flag to allow adding a `CreditCard` through the `CreditCardListView`.  Defaults to true
+  * **(OPTIONAL)** Billing Address
+    * `Address` to use as the billing address for this transaction.
+  * **(OPTIONAL)** Address Mode
+    * Mode for entering Credit Card billing address.  Options are `postalCode`, `fullAddress`, and `none`
+  * **(OPTIONAL)** Card Number Mask Mode
+    * Masking strategy when entering Credit Card card number.  Options are `lastFourVisible`, `full`, and `none`
   * **(OPTIONAL)** On Credit Card Selected (SwiftUI only)
     * A callback invoked whenever the user selects a card in the list.
   * **(OPTIONAL)** Credit Card List Delegate (UIKit only)
@@ -184,6 +190,10 @@ extension YourViewController: CreditCardDetailsDelegate {
     * Amount to show on the button label in the event where `autoSubmitAfterAddingCard` is true
   * **(OPTIONAL)** Billing Address
     * `BillingAddress` to use as the billing address for this payment.
+  * **(OPTIONAL)** Address Mode
+    * Mode for entering Credit Card billing address.  Options are `postalCode`, `fullAddress`, and `none`
+  * **(OPTIONAL)** Card Number Mask Mode
+    * Masking strategy when entering Credit Card card number.  Options are `lastFourVisible`, `full`, and `none`
   * **(OPTIONAL)** On Card Added
     * Closure invoked when a CreditCard is successfully tokenized and is passed to the calling UI
 
@@ -257,6 +267,10 @@ extension YourViewController: CreditCardDetailsDelegate {
     * Amount to show on the button label in the event where `autoSubmitAfterAddingCard` is true
   * **(OPTIONAL)** Billing Address
     * `BillingAddress` to use as the billing address for this payment.
+  * **(OPTIONAL)** Address Mode
+    * Mode for entering Credit Card billing address.  Options are `postalCode`, `fullAddress`, and `none`
+  * **(OPTIONAL)** Card Number Mask Mode
+    * Masking strategy when entering Credit Card card number.  Options are `lastFourVisible`, `full`, and `none`
   * **(OPTIONAL)** Delegate
     * Delegate to receive callbacks when a credit card has been added
    
@@ -352,6 +366,10 @@ extension YourViewController: PurchaseButtonDelegate {
     * Flag to control the operation mode of the `PurchaseButton`.  Defaults to `standard`
   * **(OPTIONAL)** Billing Address
     * `BillingAddress` to use as the billing address for this payment.
+  * **(OPTIONAL)** Address Mode
+    * Mode for entering Credit Card billing address.  Options are `postalCode`, `fullAddress`, and `none`
+  * **(OPTIONAL)** Card Number Mask Mode
+    * Masking strategy when entering Credit Card card number.  Options are `lastFourVisible`, `full`, and `none`
   * **(OPTIONAL)** Client Transaction Id
     * An identifier for the transaction, used for tracking purposes. Defaults to a randomly generated UUID if not supplied.
   * **(OPTIONAL)** Merchant Reference

@@ -76,6 +76,10 @@ extension YourViewController: MobilePaymentsPurchaseDelegate {
     * Flag to require CVV when re-using previously saved `CreditCards` for this transaction
   * **(OPTIONAL)** Billing Address
     * `Address` to use as the billing address for this transaction.
+  * **(OPTIONAL)** Address Mode
+    * Mode for entering Credit Card billing address.  Options are `postalCode`, `fullAddress`, and `none`
+  * **(OPTIONAL)** Card Number Mask Mode
+    * Masking strategy when entering Credit Card card number.  Options are `lastFourVisible`, `full`, and `none`
   * **(OPTIONAL)** Apple Pay Merchant ID
     * The Apple Pay Merchant ID you use in your app to process Apple Pay transactions. Provide it if you wish to use Apple Pay as a payment method
   * **(OPTIONAL)** Apple Pay Button Label

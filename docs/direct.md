@@ -200,10 +200,14 @@ PaymentManager.shared.auth(payment: creditCardPayment) { result in
 ### Transactions
 Transactions are operations run against previously made `Payments`.  There are two functions available, both of which require a `Transaction` object with a valid Transaction ID.
 ```
-Transaction(transactionId: String)
+Transaction(transactionId: String, authorizationCode: String?, transactionType: TransactionType)
 ```
   *  Transaction ID
     * The Mobile Payments `Transaction ID` value, provided by the `Transaction` object return to `PaymentManager` methods
+  *  Authorization Code
+    * The Mobile Payments `Authorization Code` value, provided by the `Transaction` object return when performing `AUTH` transactions
+  *  Transaction Type
+    * The transaction type of the original transaction.
 
 #### Capture
 Perform a `CAPTURE` on the `Transaction`, transferring the authorized funds from the original PaymentMethod immediately
