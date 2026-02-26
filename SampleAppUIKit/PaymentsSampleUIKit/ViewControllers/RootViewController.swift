@@ -13,11 +13,15 @@ class RootViewController: UIViewController {
     private var colorProvider: MobilePaymentsColorProvider?
     private var isApplePayAvailable: Bool = false
     
+    // Views
     private lazy var customerIdTextField: UITextField = {
         let textField = UITextField()
         textField.attributedPlaceholder = NSAttributedString(string: "Customer ID",
                                                              attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
         textField.borderStyle = .roundedRect
+        textField.layer.borderWidth = 1
+        textField.layer.borderColor = UIColor.black.cgColor
+        textField.layer.cornerRadius = 10
         textField.backgroundColor = .white
         textField.textColor = .black
         return textField
@@ -62,6 +66,19 @@ class RootViewController: UIViewController {
         return button
     }()
     
+    private lazy var directApiButton: UIButton = {
+        var config = UIButton.Configuration.filled()
+        config.title = "Direct API"
+        config.baseBackgroundColor = .systemBlue
+        config.baseForegroundColor = .white
+        config.background.cornerRadius = UIConstants.buttonHeight / 2
+        let button = UIButton(configuration: config)
+        button.addAction(UIAction { _ in
+            self.directApiTapped()
+        }, for: .touchUpInside)
+        return button
+    }()
+    
     private lazy var stylesLabel: UILabel = {
         let label = UILabel()
         label.text = "Styles"
@@ -99,7 +116,7 @@ class RootViewController: UIViewController {
     
     private lazy var styleThreeButton: UIButton = {
         var config = UIButton.Configuration.filled()
-        config.title = "Style #3"
+        config.title = "Default"
         config.baseBackgroundColor = .systemBlue
         config.baseForegroundColor = .white
         config.background.cornerRadius = UIConstants.buttonHeight / 2
@@ -140,6 +157,7 @@ class RootViewController: UIViewController {
         contentContainer.addSubview(sheetsButton)
         contentContainer.addSubview(componentsButton)
         contentContainer.addSubview(guestCheckoutButton)
+        contentContainer.addSubview(directApiButton)
         contentContainer.addSubview(stylesLabel)
         contentContainer.addSubview(styleStackView)
         
@@ -175,8 +193,15 @@ class RootViewController: UIViewController {
             $0.height.equalTo(UIConstants.buttonHeight)
         }
         
-        stylesLabel.snp.makeConstraints {
+        directApiButton.snp.makeConstraints {
             $0.top.equalTo(guestCheckoutButton.snp.bottom).offset(UIConstants.marginDefault)
+            $0.left.equalToSuperview().offset(UIConstants.horizontalScreenEdgeMargin)
+            $0.right.equalToSuperview().offset(-UIConstants.horizontalScreenEdgeMargin)
+            $0.height.equalTo(UIConstants.buttonHeight)
+        }
+        
+        stylesLabel.snp.makeConstraints {
+            $0.top.equalTo(directApiButton.snp.bottom).offset(UIConstants.marginDefault)
             $0.left.equalToSuperview().offset(UIConstants.horizontalScreenEdgeMargin)
             $0.right.equalToSuperview().offset(-UIConstants.horizontalScreenEdgeMargin)
         }
@@ -227,6 +252,16 @@ class RootViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    func directApiTapped() {
+        setCustomerId()
+        let vc = DirectAPIViewController()
+        vc.title = "Direct API"
+        if let colorProvider = colorProvider {
+            vc.colorProvider = colorProvider
+        }
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func applyStyleOne() {
         setCustomerId()
         let font = CustomFontProvider()
@@ -237,7 +272,7 @@ class RootViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = color.background
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: color.darkText]
         self.colorProvider = style.colors
-        showPopup(title: "Style #1 (Yellow Block) Applied", message: nil, from: self)
+        showPopup(title: "Style #1 (Blocky Yellow) Applied", message: nil, from: self)
     }
     
     func applyStyleTwo() {
@@ -249,7 +284,7 @@ class RootViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = color.background
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: color.darkText]
         self.colorProvider = style.colors
-        showPopup(title: "Style #2 (Dark Rounded) Applied", message: nil, from: self)
+        showPopup(title: "Style #2 (Dark) Applied", message: nil, from: self)
     }
     
     func applyStyleThree() {
@@ -259,7 +294,7 @@ class RootViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = style.colors.background
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: style.colors.darkText]
         self.colorProvider = style.colors
-        showPopup(title: "Style #3 (Default) Applied", message: nil, from: self)
+        showPopup(title: "Default Applied", message: nil, from: self)
     }
     
     func setCustomerId() {

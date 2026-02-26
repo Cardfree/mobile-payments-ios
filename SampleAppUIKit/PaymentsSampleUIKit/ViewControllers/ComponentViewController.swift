@@ -27,7 +27,12 @@ class ComponentViewController: UIViewController {
         // SDK's credit card list component
         // Disable scrolling because it is going to be embeded into an UIScrollView
         // Enabled requireCvv to forcefully collect CVV. Can be set to false if desired
-        let view = UICreditCardListView(state: state, scrollingEnabled: false, requireCvv: true, delegate: self)
+        let view = UICreditCardListView(state: state,
+                                        scrollingEnabled: false,
+                                        requireCvv: true,
+                                        addressMode: .fullAddress,
+                                        cardNumberMaskMode: .lastFourVisible,
+                                        delegate: self)
         view.add(to: self)
         return view
     }()

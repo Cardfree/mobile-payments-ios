@@ -19,9 +19,13 @@ class GuestCheckoutViewController: UIViewController {
         let textField = UITextField()
         textField.attributedPlaceholder = NSAttributedString(string: "Amount",
                                                              attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
-        textField.borderStyle = .none
-        textField.textColor = colorProvider.darkText
+        textField.borderStyle = .roundedRect
+        textField.layer.borderWidth = 1
+        textField.layer.borderColor = colorProvider.darkText.cgColor
+        textField.layer.cornerRadius = 10
         textField.backgroundColor = colorProvider.background
+        textField.textColor = colorProvider.darkText
+        textField.keyboardType = .decimalPad
         return textField
     }()
     
@@ -64,6 +68,7 @@ class GuestCheckoutViewController: UIViewController {
     }
     
     func setupView() {
+        // Add the views and setup the view constraints
         let contentContainer = UIView()
         
         view.addSubview(contentContainer)
