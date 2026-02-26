@@ -204,6 +204,24 @@ The Mobile Payments iOS SDK utilizes the standard `Localizable.strings`, drawing
 // Purchase View
 "mp_purchaseActivityTitle" = "Pay Now";
 "mp_purchasePaymentDivider" = "OR PAY WITH CARD";
+
+// Address
+"mp_addressContainerTitle" = "Billing Address";
+"mp_addressContainerAddNewButton" = "Add new address";
+
+"mp_addressDetailsTitle" = "Address";
+"mp_addressDetailsConfirmAddressButton" = "Confirm";
+
+"mp_addressDetailsLine1" = "Line 1";
+"mp_addressDetailsLine2" = "Line 2";
+"mp_addressDetailsLine3" = "Line 3";
+"mp_addressDetailsCity" = "City";
+"mp_addressDetailsState" = "State";
+"mp_addressDetailsPostalCode" = "Postal Code";
+"mp_addressDetailsCountry" = "Country";
+
+// Error Alert
+"mp_errorButtonLabel" = "OK";
 ```
 To customize, simply add any of these string keys in your `Localizable.strings` file and change the value as desired.
 

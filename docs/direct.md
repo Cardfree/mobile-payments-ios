@@ -101,6 +101,37 @@ CreditCardManager.shared.deleteCreditCard(creditCard: card) { result in
 }
 ```
 
+### Defaulting a Credit Card
+This method will set a tokenized card to be the default credit card for the customer. 
+```
+makeCreditCardDefault(creditCard: CreditCard, customerId: String?)
+```
+* **`creditCard`**:
+    * A tokenized `CreditCard` object to be deleted
+* **`customerId`** *(Optional)*: 
+    * You can provide a specific Customer ID here. If omitted, the SDK defaults to the ID provided during `MobilePayments.shared.setCustomerId()` call.
+    
+#### Option 1: Async / Await
+```
+do {
+    try await CreditCardManager.shared.makeCreditCardDefault(creditCard: card)
+    print("Success!")
+} catch {
+    print("Error: \(error.localizedDescription)")
+}
+```
+#### Option 2: Completion Handler
+```
+CreditCardManager.shared.makeCreditCardDefault(creditCard: card) { result in
+    switch result {
+    case .success:
+        print("Success!")
+    case .failure(let error):
+        print("Error: \(error.localizedDescription")")"
+    }
+}
+```
+
 ## Payments
 Payments are handled through the `PaymentManager` object.  Like `CreditCardManager`, it is a singleton that contains all Payments interactions with the MobilePayments API.
 
