@@ -65,7 +65,7 @@ In addition, you are able to configure certain optional parameters to control an
     
   * The ID of a store within your merchant, this is the same value that can be passed into inititalize.  This will direct payments to that location specifically as well as ensure payment configurations are accurate to the specific store in the event of different configurations within the same merchant.
     ```
-    MobilePayments.shared.setBusinessLocationId("<STORE_ID>"
+    MobilePayments.shared.setBusinessLocationId("<STORE_ID>")
     ```
 
   + A styling configuration to configure the fonts, colors, and shape of the application. Refer to the `Customization` section below
